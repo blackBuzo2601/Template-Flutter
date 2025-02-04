@@ -14,77 +14,52 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            bottomNavigationBar: Container(
-              width: double.infinity,
-              height: 80,
-              color: Colors.orange,
-            ),
             appBar: AppBar(
-              backgroundColor: Colors.orange,
+              backgroundColor: Colors.black,
             ),
             body: Container(
-              width: double.infinity,
-              height: double.infinity,
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    width: double.infinity,
-                    height: 150,
-                    child: Text(
-                      "01",
-                      style: TextStyle(
-                          color: const Color.fromARGB(255, 99, 99, 99),
-                          fontWeight: FontWeight.normal,
-                          fontSize: 100),
-                    ),
-                  ),
-                  Container(
+                width: double.infinity,
+                height: double.infinity,
+                color: Color.fromARGB(255, 140, 170, 222),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
                       width: double.infinity,
-                      height: 275,
-                      child: Image.asset("assets/imagen.PNG")),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 35),
-                    width: double.infinity,
-                    height: 227,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 116, 116, 116)),
-                          "Te gusta programar. Te gusta jugar videojuegos. Ers un estudiante capaz. Tu puedes",
-                          textAlign: TextAlign.justify,
-                        ),
-                        Container(
-                          width: 250,
-                          height: 70,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 87, 196, 210),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "NEXT",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: "Times New Roman",
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 35,
-                                ),
-                              ),
-                            ],
-                          ),
-                        )
-                      ],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            width: 200,
+                            height: 200,
+                            color: Colors.orange,
+                          )
+                        ],
+                      ),
                     ),
-                  )
-                ],
-              ),
-            )));
+                    Container(
+                      width: double.infinity,
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 200,
+                            height: 200,
+                            color: Colors.orange,
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                              width: 200, height: 200, color: Colors.orange)
+                        ],
+                      ),
+                    )
+                  ],
+                ))));
   }
 }
