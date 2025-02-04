@@ -20,7 +20,22 @@ class MainApp extends StatelessWidget {
             body: Container(
               width: double.infinity,
               height: double.infinity,
-              color: Color.fromARGB(255, 140, 170, 222),
+              color: Color.fromARGB(139, 127, 127, 176),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "TEXTO CENTRADO PA",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Times New Roman",
+                        color: const Color.fromARGB(255, 124, 4, 4)),
+                  ),
+                  Image.network(
+                      "https://definicion.de/wp-content/uploads/2012/01/imagen-vectorial.png")
+                ],
+              ),
             )));
   }
 }
