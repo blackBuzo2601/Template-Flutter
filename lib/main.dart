@@ -48,7 +48,7 @@ class MainApp extends StatelessWidget {
                     width: double.infinity,
                     height: 227,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
                           style: TextStyle(
