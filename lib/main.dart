@@ -25,7 +25,6 @@ class MainApp extends StatelessWidget {
             body: Container(
               width: double.infinity,
               height: double.infinity,
-              color: Colors.blue.shade100,
               child: Column(
                 children: [
                   Container(
@@ -48,7 +47,6 @@ class MainApp extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 35),
                     width: double.infinity,
                     height: 227,
-                    color: Colors.yellow,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
