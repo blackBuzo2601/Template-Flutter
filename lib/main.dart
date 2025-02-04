@@ -18,53 +18,9 @@ class MainApp extends StatelessWidget {
               backgroundColor: Colors.black,
             ),
             body: Container(
-                width: double.infinity,
-                height: double.infinity,
-                color: Color.fromARGB(255, 140, 170, 222),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: double.infinity,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: 200,
-                            height: 200,
-                            color: Colors.orange,
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: double.infinity,
-                      child: Column(
-                        children: [
-                          Container(
-                            width: 200,
-                            height: 200,
-                            color: Colors.orange,
-                          )
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: double.infinity,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Container(
-                              width: 200, height: 200, color: Colors.orange)
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: 200,
-                      height: 100,
-                      color: Colors.black,
-                    )
-                  ],
-                ))));
+              width: double.infinity,
+              height: double.infinity,
+              color: Color.fromARGB(255, 140, 170, 222),
+            )));
   }
 }
