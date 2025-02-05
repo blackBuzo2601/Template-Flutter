@@ -35,15 +35,24 @@ class MainApp extends StatelessWidget {
               height: double.infinity,
               color: Colors.greenAccent,
               child: Column(
+                //COLUMNA HIJA DEL CONTENEDOR RAIZ (BODY)
                 children: [
                   Container(
+                    //Seccion TOP 10
                     width: double.infinity,
                     height: 350,
                     color: Colors.orange,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Nuevas adiciones esta semana"),
+                        Text(
+                          "Top 10 en Kaelus esta semana",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: "sans-serif",
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600),
+                        ),
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
