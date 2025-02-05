@@ -17,25 +17,58 @@ class MainApp extends StatelessWidget {
             appBar: AppBar(
               backgroundColor: Colors.black,
             ),
-            body: Container(
-              width: double.infinity,
-              height: double.infinity,
-              color: Color.fromARGB(139, 127, 127, 176),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "TEXTO CENTRADO PA",
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Times New Roman",
-                        color: const Color.fromARGB(255, 124, 4, 4)),
+            body: Column(
+              children: [
+                Text("Imagenes pa"),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        color: Colors.black,
+                        padding: EdgeInsets.all(10),
+                        width: 200,
+                        height: 200,
+                        child: Image.network(
+                          "https://media.tenor.com/UbtVks4zby0AAAAM/ghost.gif",
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                      Container(
+                        color: Colors.black,
+                        padding: EdgeInsets.all(10),
+                        width: 200,
+                        height: 200,
+                        child: Image.network(
+                          "https://i.gifer.com/2PCh.gif",
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                      Container(
+                        color: Colors.black,
+                        padding: EdgeInsets.all(10),
+                        width: 200,
+                        height: 200,
+                        child: Image.network(
+                          "https://i.gifer.com/wfV.gif",
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                      Container(
+                        color: Colors.black,
+                        padding: EdgeInsets.all(10),
+                        width: 200,
+                        height: 200,
+                        child: Image.network(
+                          "https://i.gifer.com/2p4Z.gif",
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ],
                   ),
-                  Image.network(
-                      "https://definicion.de/wp-content/uploads/2012/01/imagen-vectorial.png")
-                ],
-              ),
+                ),
+              ],
             )));
   }
 }
