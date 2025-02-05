@@ -20,54 +20,6 @@ class MainApp extends StatelessWidget {
             body: Column(
               children: [
                 Text("Imagenes pa"),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        color: Colors.black,
-                        padding: EdgeInsets.all(10),
-                        width: 200,
-                        height: 200,
-                        child: Image.network(
-                          "https://media.tenor.com/UbtVks4zby0AAAAM/ghost.gif",
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                      Container(
-                        color: Colors.black,
-                        padding: EdgeInsets.all(10),
-                        width: 200,
-                        height: 200,
-                        child: Image.network(
-                          "https://i.gifer.com/2PCh.gif",
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                      Container(
-                        color: Colors.black,
-                        padding: EdgeInsets.all(10),
-                        width: 200,
-                        height: 200,
-                        child: Image.network(
-                          "https://i.gifer.com/wfV.gif",
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                      Container(
-                        color: Colors.black,
-                        padding: EdgeInsets.all(10),
-                        width: 200,
-                        height: 200,
-                        child: Image.network(
-                          "https://i.gifer.com/2p4Z.gif",
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
               ],
             )));
   }
