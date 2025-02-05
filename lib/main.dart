@@ -15,12 +15,52 @@ class MainApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.blue,
-            ),
-            body: Column(
-              children: [
-                Text("Imagenes pa"),
-              ],
+                centerTitle: true,
+                backgroundColor: Colors.black,
+                leading: Icon(
+                  Icons.theaters_rounded,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  textAlign: TextAlign.end,
+                  "KaelusTV Plus ",
+                  style: TextStyle(
+                      fontFamily: "Times New Roman",
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                )),
+            body: Container(
+              width: double.infinity,
+              height: double.infinity,
+              color: Colors.greenAccent,
+              child: Column(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    height: 350,
+                    color: Colors.orange,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Nuevas adiciones esta semana"),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 150,
+                                height: 250,
+                                color: Colors.black,
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )));
   }
 }
