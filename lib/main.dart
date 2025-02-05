@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.black,
+              backgroundColor: Colors.blue,
             ),
             body: Column(
               children: [
