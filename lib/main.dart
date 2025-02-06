@@ -38,14 +38,17 @@ class MainApp extends StatelessWidget {
                 //COLUMNA HIJA DEL CONTENEDOR RAIZ (BODY)
                 children: [
                   Container(
+                    margin: EdgeInsets.all(7),
+                    padding: EdgeInsets.only(top: 10),
                     //Seccion TOP 10
                     width: double.infinity,
-                    height: 420,
-                    color: Colors.orange,
+                    height: 430,
+                    color: Colors.black,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
+                          textAlign: TextAlign.center,
                           "Top 10 en Kaelus esta semana",
                           style: TextStyle(
                               color: Colors.white,
@@ -56,6 +59,7 @@ class MainApp extends StatelessWidget {
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
+                            //Cada container aqui es una pelicula unica
                             children: [
                               Container(
                                 margin: EdgeInsets.only(left: 10),
@@ -65,6 +69,7 @@ class MainApp extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Container(
+                                      margin: EdgeInsets.only(top: 15),
                                       height: 200,
                                       width: double.infinity,
                                       child: Image.asset(
@@ -87,7 +92,7 @@ class MainApp extends StatelessWidget {
                                                 Icon(
                                                   Icons.star,
                                                   color: const Color.fromARGB(
-                                                      255, 224, 210, 78),
+                                                      255, 240, 255, 24),
                                                 ),
                                                 Text(
                                                   "7.5",
