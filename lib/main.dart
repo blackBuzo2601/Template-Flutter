@@ -242,6 +242,18 @@ class MainApp extends StatelessWidget {
                                     tituloPelicula: "Star Wars III",
                                     estrellas: "10",
                                     rutaPelicula: "assets/starwars.jpg"),
+                                SingleMovie(
+                                    tituloPelicula: "Venom",
+                                    estrellas: "7.5",
+                                    rutaPelicula: "assets/venom.jpg"),
+                                SingleMovie(
+                                    tituloPelicula: "Avatar",
+                                    estrellas: "10",
+                                    rutaPelicula: "assets/avatar.jpg"),
+                                SingleMovie(
+                                    tituloPelicula: "Titanic",
+                                    estrellas: "10",
+                                    rutaPelicula: "assets/titanic.jpg")
                               ],
                             ),
                           )
